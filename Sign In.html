@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<title>MediKeep</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head><script src="script.js"></script> </head>
+<body>
+<h1>MediKeep</h1><h4>Medical Record System</h4>
+<p><a href="Sign In.html" style="color:blue">Sign In</a>|<a href="Register.html" style="color:blue">Register</a></p>
+<h2>Please Sign In</h2>
+<form action="home.html" method="get" onsubmit="return validation()"style="border:2px solid #ccc">
+  
+  <div class="container">
+    <label><b>Email</b></label>
+    <input id="emailAddress" type="email" name="email" required>
+	<br>
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+    <br>
+    
+    <label>
+      <input type="checkbox" checked="checked"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+	<button onclick="window.location.href='home.html'">Sign In</button>
+    <button type="button" class="cancelbtn">Cancel</button>
+  </div>
+</form>
+
+</body>
+</html>
